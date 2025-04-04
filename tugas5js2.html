@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Pendalaman js</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px;
+            padding: 20px;
+        }
+        
+        ol {
+            border: 3px solid #ccc;
+            padding: 25px;
+            border-radius: 9px;
+        }
+        
+        .form-group {
+            margin: 15px 0;
+        }
+        
+        select, input {
+            padding: 8px;
+            margin-right: 10px;
+            width: 200px;
+        }
+        
+        button {
+            background-color: #4c524c;
+            color: white;
+            padding: 8px 16px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #111a11;
+        }
+        
+        #message {
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 4px;
+        }
+        
+    </style>
+</head>
+<body>
+    <h2>Bahasa Pemrograman</h2>
+    <ol id="list">
+        <li>Python</li>
+        <li>Javascript</li>
+        <li>Java</li>
+        <li>PHP</li>
+        <li>Ruby</li>
+    </ol>
+
+    <div class="form-group">
+        <select id="actionType">
+            <option value="add">Tambah Data</option>
+            <option value="remove">Hapus Data</option>
+        </select>
+        <input type="text" id="dataInput" placeholder="Masukkan data">
+        <button onclick="handleSubmit()">Submit</button>
+    </div>
+
+    <div id="message"></div>
+
+    <script src="tugas5js2.js"></script>
+</body>
+</html>

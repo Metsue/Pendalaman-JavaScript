@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 5 Pendalaman JS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #478501;
+            color: white;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .pertanyaan {
+            background-color: #42630f;
+            padding: 13px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+        }
+        #hasil {
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .hijau {
+            background-color: #13be3b;
+            color: white;
+        }
+        .merah {
+            background-color: #dc3545;
+            color: white;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            display: block;
+            margin-top: 1px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Soal Pilihan Ganda Mengenai Pemahaman Tentang JavaScript</h2>
+    <hr><br>
+    <form id="kuisForm">
+        <div class="pertanyaan">
+            <p>1. Apa kegunaan utama JavaScript dalam pengembangan web?</p>
+            <label><input type="radio" name="per1" value="A"> A. Membuat desain layout halaman</label><br>
+            <label><input type="radio" name="per1" value="B"> B. Menambahkan interaktivitas pada halaman web</label><br>
+            <label><input type="radio" name="per1" value="C"> C. Membuat web jadi burik</label><br>
+            <label><input type="radio" name="per1" value="D"> D. Mengatur database</label>
+        </div>
+        <div class="pertanyaan">
+            <p>2. Fungsi document.getElementById("judul") digunakan untuk?</p>
+            <label><input type="radio" name="per2" value="A"> A. Menambah elemen baru</label><br>
+            <label><input type="radio" name="per2" value="B"> B. Menghapus elemen</label><br>
+            <label><input type="radio" name="per2" value="C"> C. Mengubah tag HTML</label><br>
+            <label><input type="radio" name="per2" value="D"> D. Mengambil elemen berdasarkan ID</label>
+        </div>
+        <div class="pertanyaan">
+            <p>3. Fungsi alert() dalam JavaScript digunakan untuk?</p>
+            <label><input type="radio" name="per3" value="A"> A. Menampilkan pesan pop-up</label><br>
+            <label><input type="radio" name="per3" value="B"> B. Membuat array baru</label><br>
+            <label><input type="radio" name="per3" value="C"> C. Menampilkan kotak input</label><br>
+            <label><input type="radio" name="per3" value="D"> D. Mengubah urutan elemen</label>
+        </div>
+        <div class="pertanyaan">
+            <p>4.  Properti apa yang digunakan untuk mengubah isi dari suatu elemen HTML?</p>
+            <label><input type="radio" name="per4" value="A"> A. getElement</label><br>
+            <label><input type="radio" name="per4" value="B"> B. innerJSON</label><br>
+            <label><input type="radio" name="per4" value="C"> C. styleHTML</label><br>
+            <label><input type="radio" name="per4" value="D"> D. innerHTML</label>
+        </div>
+        <button type="button" onclick="cekHasil()">Lihat Hasil</button>
+    </form>
+    <div id="hasil"></div>
+
+    <script src="tugas5.js"></script>
+</body>
+</html>
